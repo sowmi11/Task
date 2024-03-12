@@ -1,0 +1,20 @@
+Feb 28, 2024 12:32:30 PM dbtest.DbTest main
+INFO: Enter problem number:
+Feb 28, 2024 12:32:33 PM dbtask.DbTask createTable
+SEVERE: Error creating table
+java.sql.SQLSyntaxErrorException: Table 'Employee' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at dbtask.DbTask.createTable(DbTask.java:27)
+	at dbtest.DbTest.main(DbTest.java:34)
+
+Feb 28, 2024 12:32:33 PM dbtest.DbTest main
+SEVERE: An error occured
+custom.CustomException: Error Creating Table
+	at dbtask.DbTask.createTable(DbTask.java:31)
+	at dbtest.DbTest.main(DbTest.java:34)
+
+Feb 28, 2024 12:32:33 PM dbtest.DbTest main
+INFO: Enter problem number:
